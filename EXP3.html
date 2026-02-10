@@ -1,32 +1,62 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Experiment 3 - Text Formatting Tags</title>
+    <meta charset="UTF-8">
+    <title>Complex Nested Lists</title>
 </head>
-<body>
 
-    <h1>Text Formatting Tags in HTML</h1>
+<body style="font-family:Arial;">
+    <h1>This is a WebPage of HTML Nested Lists Tags</h1>
+    <hr>
+    <h3>Name : Chinmay S. Chitari</h3>
+    <h3>Division : A</h3>
+    <h3>Class : S. Y. B. Tech CSE</h3>
+    <h3>Batch : S5</h3>
+    <h3>Roll No. : 111</h3>
+    <hr>
+    <ol type="1" start="1" id="mainOL" class="list main-ol" title="Main Ordered List">
+        <li>Programming Languages
+            <ul type="disc" start="1" id="ul1" class="list ul-1" title="UL inside OL">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Web Technologies
+                    <ol type="A" start="3" id="ol2" class="list ol-2" title="OL inside UL">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript Frameworks
+                            <ul type="square" start="5" id="ul2" class="list ul-2" title="UL inside OL inside UL">
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>Vue</li>
+                                <li>Svelte</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>C / C++</li>
+            </ul>
+        </li>
 
-    <p><b>Bold Text</b></p>
-    <p><strong>Strong Text</strong></p>
+        <li>Databases
+            <ul type="circle" start="2" id="ul3" class="list ul-3" title="Database List">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Oracle</li>
+            </ul>
+        </li>
 
-    <p><i>Italic Text</i></p>
-    <p><em>Emphasized Text</em></p>
-
-    <p><u>Underlined Text</u></p>
-
-    <p><mark>Marked Text</mark></p>
-
-    <p><small>Small Text</small></p>
-
-    <p>H<sub>2</sub>O (Subscript)</p>
-    <p>10<sup>2</sup> (Superscript)</p>
-
-    <p><del>Deleted Text</del></p>
-    <p><ins>Inserted Text</ins></p>
-
-    <p><code>This is code text</code></p>
+        <li>Operating Systems</li>
+        <ul type="square">
+            <li><b><i>Ubuntu</i></b> - A Free Open Operating System</li>
+            <li><b><i>Windows</i></b> - A Licensed Operating System, Developed by <u>Microsoft Inc.</u></li>
+            <li><b><i>MacOS</i></b> - A Licensed Operating System, Developed by <u>Apple Inc.</u></li>
+            <li><b><i>Android</i></b> - An Operating System for Smartphones, Developed by <u>Google Inc.</u></li>
+        </ul>
+    </ol>
+    <hr>
 
 </body>
+
 </html>
