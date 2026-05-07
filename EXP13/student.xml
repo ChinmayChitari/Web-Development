@@ -2,7 +2,7 @@
 <?xml-stylesheet type = "text/xsl" href = "students.xsl"?> 
 <class> 
    <student rollno = "393"> 
-      <firstname>Dinkar</firstname> 
+      <firstname>anurag</firstname> 
       <lastname>Kad</lastname> 
       <nickname>Dinkar</nickname> 
       <marks>85</marks> 
