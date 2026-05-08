@@ -1,42 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Calorie Calculator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Experiments Index</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .card a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .card a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Calorie Calculator</h1>
-  <section class="container">    
-    <div class="input-group">
-      <label for="activity">Activity:</label>
-       <select id="activity">
-        <option value="running">Running</option>
-        <option value="walking">Walking</option>
-       </select>
+    <h1>🌟 Web Development Experiments Index 🌟</h1>
+    <div class="container">
+        <!-- Individual EXP Files -->
+        <div class="card">
+            <h2>Experiment 1</h2>
+            <a href="EXP1.html">View EXP1.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 2</h2>
+            <a href="EXP2.html">View EXP2.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 3</h2>
+            <a href="EXP3.html">View EXP3.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 4</h2>
+            <a href="EXP4.html">View EXP4.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 5</h2>
+            <a href="EXP5.html">View EXP5.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 6</h2>
+            <a href="EXP6.html">View EXP6.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 7</h2>
+            <a href="EXP7.html">View EXP7.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 8</h2>
+            <a href="EXP8.html">View EXP8.html</a>
+        </div>
+        <div class="card">
+            <h2>Experiment 9</h2>
+            <a href="EXP9.html">View EXP9.html</a>
+        </div>
+        
+        <!-- Folders -->
+        <div class="card">
+            <h2>Calories Calculator</h2>
+            <a href="calories-calculator-main/index.html">View Calculator</a>
+            <ul>
+                <li><a href="calories-calculator-main/README.md">README</a></li>
+                <li><a href="calories-calculator-main/script.js">Script</a></li>
+                <li><a href="calories-calculator-main/style.css">Styles</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Experiment 10</h2>
+            <a href="EXP10/EXP10.html">View EXP10.html</a>
+            <ul>
+                <li><a href="EXP10/EXP10.css">EXP10.css</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Experiment 11</h2>
+            <a href="EXP 11/EXP11.xml">View EXP11.xml</a>
+            <ul>
+                <li><a href="EXP 11/EXP11.css">EXP11.css</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Experiment 12</h2>
+            <a href="EXP12/cdcatlog_output.htm">View CD Catalog Output</a>
+            <ul>
+                <li><a href="EXP12/cdcatlog.xml">XML</a></li>
+                <li><a href="EXP12/cdcatlog.xsl">XSL</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Experiment 13</h2>
+            <a href="EXP13/student_output.htm">View Student Output</a>
+            <ul>
+                <li><a href="EXP13/student.xml">XML</a></li>
+                <li><a href="EXP13/student.xsl">XSL</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="input-group">
-      <label for="steps">Number of Steps:</label>
-      <input type="number" id="steps" placeholder="Enter steps">
-    </div>
-    <div class="input-group">
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" placeholder="Enter weight">
-    </div>
-  <div class="input-group">
-    <label for="height">Height (cm):</label>
-    <input type="number" id="height" placeholder="Enter height">
-  </div>
-  <div class="input-group">
-    <label for="meters">Distance (meters):</label>
-    <input type="number" id="meters" placeholder="Enter distance in meters">
-  </div>
-  <div class="input-group">
-    <label for="minutes">Minutes Run:</label>
-    <input type="number" id="minutes" placeholder="Enter time in minutes">
-  </div>
-  <button onclick="calculateCalories()">Calculate Calories</button>  
-  <p id="result"></p>
-  <script src="script.js"></script>
-</section>
 </body>
 </html>
