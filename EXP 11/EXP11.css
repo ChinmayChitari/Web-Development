@@ -1,25 +1,25 @@
-/* Style for the students XML */
-students {
+/* Style for the library XML */
+library {
     display: block;
-    font-family: Arial, sans-serif;
-    background-color: #e3f2fd;
+    font-family: "Georgia", serif;
+    background-color: #fff3e0;
     padding: 15px;
 }
 
-/* Style each student */
-student {
+/* Style each book */
+book {
     display: block;
     margin: 10px;
     padding: 10px;
-    border: 2px solid #0277bd;
+    border: 2px solid #ff9800;
     background-color: #ffffff;
     border-radius: 5px;
 }
 
-/* Style elements inside student */
-id, name, age, department, email {
+/* Style elements inside book */
+id, title, author, published_year, available_copies {
     display: block;
     font-weight: bold;
-    color: #01579b;
+    color: #e65100;
     margin: 5px 0;
 }
